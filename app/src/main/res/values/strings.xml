@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">dinner</string>
+    <string name="name">soso</string>
+    <string name="password">56858520</string>
+
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="action_settings">Settings</string>
+</resources>
