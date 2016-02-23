@@ -1,3 +1,30 @@
 <resources>
-    <string name="app_name">hello</string>
+    <string name="app_name">dinner</string>
+    <string name="system_config_name">系统设置</string>
+    <string name="serialport_config_name">串口设置</string>
+
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="action_settings">Settings</string>
+
+
+<!--nav_view-->
+    <string name="nav_name_select">点餐</string>
+    <string name="nav_name_wine">调酒</string>
+    <string name="nav_name_control">控制</string>
+    <string name="nav_name_share">分享</string>
+    <string name="nav_name_config">设置</string>
+    <string name="nav_name_about">关于</string>
+    <string name="about_dialog_text">This is a sample application using the serialport control dinner table.\n\nGithub: https://github.com/seemehowmuchiloveyou/dinner\n\nCopyright: soso</string>
+
+<!--serialport_config-->
+    <string name="name_serialport">Device</string>
+    <string name="name_baudrates">Baud rate</string>
+    <string name="name_device_rotary">旋转台</string>
+    <string name="name_device_gas">气量</string>
+    <string name="name_button_test">测试</string>
+
+
 </resources>
