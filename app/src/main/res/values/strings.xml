@@ -1,0 +1,89 @@
+<resources>
+    <string name="app_name">dinner</string>
+    <string name="system_config_name">系统设置</string>
+    <string name="serialport_config_name">串口设置</string>
+
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="action_settings">Settings</string>
+
+
+<!--nav_view-->
+    <string name="nav_name_select">点餐</string>
+    <string name="nav_name_wine">调酒</string>
+    <string name="nav_name_control">控制</string>
+    <string name="nav_name_share">分享</string>
+    <string name="nav_name_config">设置</string>
+    <string name="nav_name_about">关于</string>
+    <string name="about_dialog_text">This is a sample application using the serialport control dinner table.\n\nGithub: https://github.com/seemehowmuchiloveyou/dinner\n\nCopyright: soso</string>
+
+<!--serialport_config-->
+    <string name="name_serialport">Device</string>
+    <string name="name_baudrates">Baud rate</string>
+    <string name="name_device_rotary">旋转台</string>
+    <string name="name_device_gas">气量</string>
+    <string name="name_button_test">测试</string>
+    <string name="title_activity_settings">Settings</string>
+
+    <!-- Strings related to Settings -->
+
+    <!-- Example General settings -->
+    <string name="pref_header_general">General</string>
+
+    <string name="pref_title_social_recommendations">Enable social recommendations</string>
+    <string name="pref_description_social_recommendations">Recommendations for people to contact
+        based on your message history
+    </string>
+
+    <string name="pref_title_display_name">Display name</string>
+    <string name="pref_default_display_name">John Smith</string>
+
+    <string name="pref_title_add_friends_to_messages">Add friends to messages</string>
+    <string-array name="pref_example_list_titles">
+        <item>Always</item>
+        <item>When possible</item>
+        <item>Never</item>
+    </string-array>
+    <string-array name="pref_example_list_values">
+        <item>1</item>
+        <item>0</item>
+        <item>-1</item>
+    </string-array>
+
+    <!-- Example settings for Data & Sync -->
+    <string name="pref_header_data_sync">Data &amp; sync</string>
+
+    <string name="pref_title_sync_frequency">Sync frequency</string>
+    <string-array name="pref_sync_frequency_titles">
+        <item>15 minutes</item>
+        <item>30 minutes</item>
+        <item>1 hour</item>
+        <item>3 hours</item>
+        <item>6 hours</item>
+        <item>Never</item>
+    </string-array>
+    <string-array name="pref_sync_frequency_values">
+        <item>15</item>
+        <item>30</item>
+        <item>60</item>
+        <item>180</item>
+        <item>360</item>
+        <item>-1</item>
+    </string-array>
+
+    <string name="pref_title_system_sync_settings">System sync settings</string>
+
+    <!-- Example settings for Notifications -->
+    <string name="pref_header_notifications">Notifications</string>
+
+    <string name="pref_title_new_message_notifications">New message notifications</string>
+
+    <string name="pref_title_ringtone">Ringtone</string>
+    <string name="pref_ringtone_silent">Silent</string>
+
+    <string name="pref_title_vibrate">Vibrate</string>
+
+
+</resources>
