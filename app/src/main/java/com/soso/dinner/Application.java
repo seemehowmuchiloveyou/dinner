@@ -1,4 +1,3 @@
-package com.soso.dinner.serialport;
 /*
  * Copyright 2009 Cedric Priscal
  *
@@ -14,18 +13,19 @@ package com.soso.dinner.serialport;
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-/**
- * Created by huhang on 2016/2/22.
- */
+
+package com.soso.dinner;
 
 import java.io.File;
 import java.io.IOException;
 import java.security.InvalidParameterException;
-
-
 import android.content.SharedPreferences;
 
-public class SerialPortApplication extends android.app.Application {
+import com.soso.dinner.serialport.SerialPort;
+import com.soso.dinner.serialport.SerialPortFinder;
+
+
+public class Application extends android.app.Application {
 
     public SerialPortFinder mSerialPortFinder = new SerialPortFinder();
     private SerialPort mSerialPort = null;
@@ -33,7 +33,7 @@ public class SerialPortApplication extends android.app.Application {
     public SerialPort getSerialPort() throws SecurityException, IOException, InvalidParameterException {
         if (mSerialPort == null) {
 			/* Read serial port parameters */
-            SharedPreferences sp = getSharedPreferences("com.rpdzkj.yangbin.serialport_preferences", MODE_PRIVATE);
+            SharedPreferences sp = getSharedPreferences("com.soso.dinner.serial_port_preferences", MODE_PRIVATE);
             String path = sp.getString("DEVICE", "");
             int baudrate = Integer.decode(sp.getString("BAUDRATE", "-1"));
 

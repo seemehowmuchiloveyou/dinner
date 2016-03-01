@@ -9,95 +9,53 @@
     android:paddingTop="@dimen/activity_vertical_margin"
     tools:context="com.soso.dinner.serialport_config">
 
-    <TextView
-        android:id="@+id/textView_device_rotary"
+    <LinearLayout
+        android:orientation="vertical"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:textAllCaps="true"
-        android:text="@string/name_device_rotary"
-        android:textColor="@android:color/holo_blue_dark"
-        android:textSize="18sp"
-        android:textStyle="bold"/>
-
-    <View
-        android:layout_width="match_parent"
-        android:layout_height="1dp"
-        android:background="@android:color/holo_blue_dark"
-        android:layout_below="@+id/textView_device_rotary"
-        android:layout_centerHorizontal="true"
-        android:id="@+id/view_splitline_rotary" />
-
-    <TextView
-        android:id="@+id/textView_name_serialport"
-        android:text="@string/name_serialport"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:textAllCaps="true"
-        android:textSize="14sp"
-        android:textColor="@color/colorGray"
-        android:layout_marginTop="10dp"
-        android:layout_below="@+id/view_splitline_rotary"
+        android:layout_below="@+id/view_splitline_rotary_up"
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true"
-        android:layout_alignWithParentIfMissing="false" />
-    <TextView
-        android:id="@+id/textView_select_serialport"
-        android:text="@string/name_serialport"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:textAllCaps="false"
-        android:textSize="14sp"
-        android:textColor="@android:color/darker_gray"
-        android:layout_alignWithParentIfMissing="false"
-        android:layout_below="@+id/textView_name_serialport"
-        android:layout_alignRight="@+id/view_splitline_serialport"
-        android:layout_alignEnd="@+id/view_splitline_serialport" />
-    <View
-        android:id="@+id/view_splitline_serialport"
-        android:layout_width="match_parent"
-        android:layout_height="1dp"
-        android:background="@android:color/darker_gray"
-        android:layout_below="@+id/textView_select_serialport"
-        android:layout_centerHorizontal="true" />
+        android:id="@+id/linearLayout">
 
-    <TextView
-        android:id="@+id/textView_name_baudrates"
-        android:text="@string/name_baudrates"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:textAllCaps="true"
-        android:textSize="14sp"
-        android:textColor="@color/colorGray"
-        android:layout_marginTop="5dp"
-        android:layout_below="@+id/view_splitline_serialport"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true" />
-    <Spinner
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:id="@+id/spinner_baudrates"
-        android:entries="@array/baudrates_name"
+        <TextView
+            android:id="@+id/textView_device_rotary"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAllCaps="true"
+            android:text="@string/name_device_rotary"
+            android:textColor="@android:color/holo_blue_dark"
+            android:textSize="18sp"
+            android:textStyle="bold"/>
 
-        android:gravity="right"
-        android:layout_alignRight="@+id/view_splitline_baudrates"
-        android:layout_alignEnd="@+id/view_splitline_baudrates"
-        android:layout_below="@+id/textView_name_baudrates" />
-    <View
-        android:id="@+id/view_splitline_baudrates"
-        android:layout_width="match_parent"
-        android:layout_height="1dp"
-        android:background="@android:color/darker_gray"
-        android:layout_below="@+id/spinner_baudrates"
-        android:layout_centerHorizontal="true" />
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@android:color/holo_blue_dark"
+            android:id="@+id/view_splitline_rotary_up" />
 
+        <ListView
+            android:id="@android:id/list"
+            android:layout_width="match_parent"
+            android:layout_height="97dp" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@android:color/holo_blue_dark"
+            android:id="@+id/view_splitline_rotary_end" />
+    </LinearLayout>
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/name_button_test"
         android:id="@+id/button_test_device_rotary"
-        android:layout_alignTop="@+id/view_splitline_baudrates"
-        android:layout_alignRight="@+id/view_splitline_baudrates"
-        android:layout_alignEnd="@+id/view_splitline_baudrates" />
+        android:layout_gravity="right"
+        android:layout_below="@+id/linearLayout"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+
 
 
 </RelativeLayout>
